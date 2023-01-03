@@ -1,0 +1,142 @@
+<div  class="wrapperuser">
+    <form [formGroup]="cuestionarioForm">
+        <div class="row w-100 p-3 body-urs">
+            <h1>Información del Candidato</h1>
+        </div>
+        <div class="row mb-2 body-urs">
+            <div class="col-md-2 p-3">
+              <img src="../../../../../assets/img/{{img}}" class="img-fluid p-3"
+                alt="Imagen de Perfil">
+            </div>
+        </div>
+        <div class="row w-100 p-3">
+            <div class="column">
+                <mat-form-field appearance="fill">
+                    <mat-label>Nombre</mat-label>
+                    <input formControlName="Nombre" matInput autocomplete="off" [readonly]="true">
+                </mat-form-field>
+            </div>
+    
+            <div class="column">
+                <mat-form-field appearance="fill">
+                    <mat-label>Apellido Paterno</mat-label>
+                    <input formControlName="A_Paterno" matInput autocomplete="off" [readonly]="true">
+                </mat-form-field>
+            </div>
+    
+            <div class="column">
+                <mat-form-field appearance="fill">
+                    <mat-label>Apellido Materno</mat-label>
+                    <input formControlName="A_Materno" matInput autocomplete="off" [readonly]="true">
+                </mat-form-field> 
+            </div>
+    
+            <div class="column">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Edad</mat-label>
+                        <input formControlName="Fecha_nac" matInput autocomplete="off" [readonly]="true">
+                </mat-form-field>
+            </div> 
+    
+            <div class="column">
+                <mat-form-field appearance="fill">
+                    <mat-label>Género</mat-label>
+                    <input formControlName="Genero" matInput autocomplete="off" [readonly]="true">
+                </mat-form-field> 
+            </div> 
+    
+            <div class="column">
+                <mat-form-field appearance="fill">
+                    <mat-label>Correo</mat-label>
+                    <input formControlName="Correo" matInput autocomplete="off" [readonly]="true">
+                  </mat-form-field> 
+            </div>
+        </div>
+    </form>
+</div>
+<div class="row w-100 p-3 body-urs">
+  <h1>Rasgos de la Triada Oscura</h1>
+</div>
+<div class="wrapperuser">
+    <div class="container-sm grafico">
+        <ngx-charts-pie-chart
+        [view]="view"
+        [results]="single"
+        [gradient]="gradient"
+        [legend]="showLegend"
+        [labels]="showLabels"
+        [doughnut]="isDoughnut">
+        </ngx-charts-pie-chart>
+    </div>
+</div>
+
+<div >
+    <div class="row w-100 p-3 body-urs">
+        
+        
+        
+        
+        <div class="card">
+            <div class="card-header">
+              <h1>Interpretacion de Resultados</h1>
+            </div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Maquiavelismo
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">{{inter1}}</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Psicopatia
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">{{inter2}}</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Narcisismo
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">{{inter3}}</div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center text-white" style="background-color: #0a4275;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: CTA -->
+      <section class="text-center">
+        <p class="d-flex justify-content-center align-items-center">
+          TT 2021-B050
+        </p>
+        <p class="d-flex justify-content-center align-items-center">
+          TT 2021-B050
+          "PROTOTIPO PARA IDENTIFICAR RASGOS DE PERSONALIDAD DE LA TRIADA OSCURA (MAQUIAVELISMO, NARCISISMO Y PSICOPATÍA) EN ENTREVISTAS DE TRABAJO."
+        </p>
+      </section>
+      <!-- Section: CTA -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <p>Instituto Politecnico Nacional</p> 
+      <p>Escuela Superior de Computo</p> 
+    </div>
+    <!-- Copyright -->
+</footer>

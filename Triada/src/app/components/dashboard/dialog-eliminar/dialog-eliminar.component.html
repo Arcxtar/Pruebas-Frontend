@@ -1,0 +1,9 @@
+<h2 mat-dialog-title>¿Desea borrar al candidato?</h2>
+<mat-dialog-content class="mat-typography">
+  <p>{{Nombre}}</p>
+  <p>{{Correo}}</p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button (click)="cancelar()" mat-button cdkFocusInitial>Cancelar</button>
+  <button mat-button color="warn" (click)="borrarCandidato()">Borrar</button>
+</mat-dialog-actions>

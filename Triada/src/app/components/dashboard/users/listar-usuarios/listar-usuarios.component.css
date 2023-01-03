@@ -1,0 +1,17 @@
+table {
+    width: 100%;
+}
+
+.btnVer, .btnDelete {
+    cursor: pointer;
+}
+
+.btnDelete {
+
+    color: #B0304B;
+}
+
+.btnVer {
+
+    color: #4B7BCD;
+}

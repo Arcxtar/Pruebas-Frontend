@@ -1,0 +1,101 @@
+<mat-toolbar color="primary">
+  <span>Triada Oscura</span>
+  <span class="example-spacer"></span>
+  <!--  -->
+  <button routerLink="/inicio" mat-icon-button class="home" (click)="home()" aria-label="Example home icon">
+      <mat-icon>home</mat-icon>
+  </button>
+</mat-toolbar>
+<div class="wrapper">
+  <div class="body-sign">
+      <img class="logo" src="../../../assets/img/usuario.png" alt="img login">
+      <h3>Registrar Usuario</h3>
+
+      <form class="row g-2 needs-validation was-validated" novalidate>
+          <div class="col-sm-6">
+            <label class="form-label">Nombre(s)</label>
+            <input type="text" [(ngModel)]="Nombre" class="form-control" id="firstName" placeholder="Nombre(s)" required autocomplete="off" [ngModelOptions]="{standalone: true}">
+            <div class="invalid-feedback">
+              Ingrese un nombre valido.
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <label class="form-label">Apellido Paterno</label>
+            <input type="text" [(ngModel)]="A_Paterno" class="form-control" id="A_Paterno" placeholder="Apellido Paterno" required autocomplete="off" [ngModelOptions]="{standalone: true}">
+            <div class="invalid-feedback">
+              Ingrese apellido valido
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+              <label class="form-label">Apellido Materno</label>
+              <input type="text" [(ngModel)]="A_Materno" class="form-control" id="A_Materno" placeholder="Apellido Materno" value="" required autocomplete="off" [ngModelOptions]="{standalone: true}">
+              <div class="invalid-feedback">
+                Ingrese un apellido valido
+              </div>
+          </div>
+
+          <div class="col-sm-6">
+            <label class="form-label">Genero</label>
+            <select type="text" class="form-select" [(ngModel)]="Genero" id="Genero" placeholder="Genero" required autocomplete="off" [ngModelOptions]="{standalone: true}">
+              <option value="">Selecciona tu genero...</option>
+              <option>M</option>
+              <option>F</option>
+              <option>X</option>
+              </select>
+            <div class="invalid-feedback">
+              Ingrese apellido valido
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+              <label class="form-label">Empresa</label>
+              <input type="text" [(ngModel)]="Empresa" class="form-control" id="Empresa" placeholder="Nombre de la empresa" required autocomplete="off" [ngModelOptions]="{standalone: true}">
+              <div class="invalid-feedback">
+                Ingrese el nombre de la empresa
+              </div>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Fecha de Nacimiento</label>
+            <input [(ngModel)]="Fecha_nac" class="col-md-2 form-control" id="Fecha_nac" name="format" type="text" placeholder="YYYY/MM/DD" required autocomplete="off" [ngModelOptions]="{standalone: true}">
+            <div class="invalid-feedback">
+              Ingrese una fecha valida
+            </div>
+          </div>
+
+          <div class="col-12">
+              <label class="form-label">Correo</label>
+              <input type="email" [(ngModel)]="Correo" autocomplete="false" class="form-control" id="Correo" placeholder="you@example.com" required autocomplete="off" [ngModelOptions]="{standalone: true}">
+              <div class="invalid-feedback">
+                Ingrese un correo valido
+              </div>
+          </div>
+          <div class="col-12">
+              <label class="form-label">Password</label>
+              <input type="password" [(ngModel)]="password" class="form-control"  placeholder="Ingrese Password" required="" autocomplete="off" [ngModelOptions]="{standalone: true}">
+              <div class="invalid-feedback">
+                  Ingrese su password
+              </div>
+          </div>
+
+          <div class="col-12">
+              <label class="form-label">Repetir Password</label>
+              <input type="password" [(ngModel)]="confirmPassword" class="form-control"  placeholder="Ingrese Password" required="" autocomplete="off" [ngModelOptions]="{standalone: true}">
+              <div class="invalid-feedback">
+                  Ingrese nuevamente el password
+              </div>
+          </div>
+          <div>
+            <p class="fw-light">La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula, al menos una mayúscula y al menos un caracter no alfanumérico.</p>
+          </div>
+
+          <div class="d-grid gap-2 mb-3 mt-3">
+              <button class="w-100 btn btn-lg btn-primary" (click)="addUser()" type="button">Registrar</button>
+          </div>
+          <a routerLink="/inicio">Volver</a>
+        </form>
+          <p class="mt-5 mb-3 text-muted">TT 2021-B050</p>
+  </div>
+</div>

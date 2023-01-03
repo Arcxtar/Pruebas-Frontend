@@ -1,0 +1,158 @@
+<mat-toolbar color="primary">
+    <span>Triada Oscura</span>
+    <span class="example-spacer"></span>
+    <!--  -->
+    <button routerLink="/inicio" mat-icon-button class="home" (click)="home()" aria-label="Example home icon">
+        <mat-icon>home</mat-icon>
+    </button>
+</mat-toolbar>
+<p></p>
+<form  (ngSubmit)="agregarCuestionario()" [formGroup]="cuestionarioForm">
+    <div class="row w-100 p-3">
+        <h1>Datos personales</h1>
+        <p>Favor de ingresar los siguientes datos</p>
+    </div>
+    <div class="row w-100 p-3">
+        <div class="column">
+            <mat-form-field appearance="fill">
+                <mat-label>Nombre</mat-label>
+                <input formControlName="Nombre" matInput placeholder="Ingrese su Nombre" autocomplete="off">
+            </mat-form-field>
+            <div class="error">
+                <span *ngIf="cuestionarioForm.get('Nombre')?.hasError('required') &&  cuestionarioForm.get('Nombre')?.touched">El nombre es un campo <strong>requerido</strong></span>
+            </div>
+        </div>
+
+        <div class="column">
+            <mat-form-field appearance="fill">
+                <mat-label>Apellido Paterno</mat-label>
+                <input formControlName="A_Paterno" matInput placeholder="Ingrese su Apellido Paterno" autocomplete="off">
+            </mat-form-field>
+            <div class="error">
+                <span *ngIf="cuestionarioForm.get('A_Paterno')?.hasError('required') &&  cuestionarioForm.get('A_Paterno')?.touched">El apellido paterno es un campo <strong>requerido</strong></span>
+            </div>
+        </div>
+
+        <div class="column">
+            <mat-form-field appearance="fill">
+                <mat-label>Apellido Materno</mat-label>
+                <input formControlName="A_Materno" matInput placeholder="Ingrese su Apellido Materno" autocomplete="off">
+            </mat-form-field> 
+            <div class="error">
+                <span *ngIf="cuestionarioForm.get('A_Materno')?.hasError('required') &&  cuestionarioForm.get('A_Materno')?.touched">El apellido materno es un campo <strong>requerido</strong></span>
+            </div>
+        </div>
+
+        <div class="column">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Fecha de nacimiento</mat-label>
+                    <input [max]="maxDate" formControlName="Fecha_nac" matInput [matDatepicker]="picker" autocomplete="off">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker touchUi #picker></mat-datepicker>
+                </mat-form-field>
+                <div class="error">
+                    <span *ngIf="cuestionarioForm.get('Fecha_nac')?.hasError('required') &&  cuestionarioForm.get('Fecha_nac')?.touched">La fecha de nacimiento es un campo <strong>requerido</strong></span>
+                </div>
+        </div>
+
+        <div class="column">
+            <mat-form-field appearance="fill">
+                <mat-label>Género</mat-label>
+                <mat-select formControlName="Genero">
+                  <mat-option *ngFor="let item of Genero" [value]="item">
+                    {{ item }}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            <div class="error">
+                <span *ngIf="cuestionarioForm.get('Genero')?.hasError('required') &&  cuestionarioForm.get('Genero')?.touched">El género es un campo <strong>requerido</strong></span>
+            </div>
+        </div>
+
+        <div class="column">
+            <mat-form-field appearance="fill">
+                <mat-label>Correo</mat-label>
+                <input formControlName="Correo" matInput placeholder="Ingrese correo del Candidato" autocomplete="off">
+              </mat-form-field> 
+              <div class="error">
+                <span *ngIf="cuestionarioForm.get('Correo')?.hasError('required') &&  cuestionarioForm.get('Correo')?.touched">El correo es un campo <strong>requerido</strong></span>
+                <span *ngIf="cuestionarioForm.get('Correo')?.hasError('required') &&  cuestionarioForm.get('Correo')?.touched" > El correo es <strong>inválido</strong></span>
+            </div>
+        </div>
+        
+        <div class="example-spacer">
+            <mat-form-field appearance="fill">
+                <mat-label>Código</mat-label>
+                <input formControlName="Codigo" matInput placeholder="Ingrese el código proporcionado" autocomplete="off">
+            </mat-form-field>
+            <div class="error">
+                <span *ngIf="cuestionarioForm.get('Codigo')?.hasError('required') &&  cuestionarioForm.get('Codigo')?.touched">El código es un campo <strong>requerido</strong> proporcionado por el reclutador</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row w-75 p-3 d-flex justify-content-center">
+        <h1>Cuestionario</h1>
+        <p>Contesta de forma sincera las siguientes preguntas con verdadero(V) o falso(F).</p>
+    </div>
+    <div class="row w-100 p-3">
+    <div formArrayName="direcciones" class="column">
+        <div class="columna" style="float: left; width: 100%; margin:auto;"> 
+            <table class="table table-striped">  
+            <thead>  
+                <tr>  
+                    <th>#</th>  
+                    <th>Pregunta</th>  
+                    <th>Respuesta</th>
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr *ngFor="let preguntas of test; let i=index">  
+                <td>{{ preguntas.numero }}</td>  
+                <td>{{ preguntas.pregunta }}</td>  
+                <td>
+                    <ng-container>
+                        <mat-form-field>
+                            <mat-label>V/F</mat-label>
+                            <mat-select [formControlName]="i">
+                              <mat-option *ngFor="let item of Opcion" [value]="item">
+                                {{ item }}
+                              </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </ng-container>
+                </td>
+                </tr>   
+            </tbody>  
+            </table>
+        </div>  
+    </div>
+    <span class="example-spacer"></span>
+    <button mat-raised-button color="primary" type="submit" mat-button [disabled]="cuestionarioForm.invalid" (click)="save()">Enviar</button>
+    </div>
+</form>
+
+<footer class="text-center text-white" style="background-color: #0a4275;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: CTA -->
+      <section class="text-center">
+        <p class="d-flex justify-content-center align-items-center">
+          TT 2021-B050
+        </p>
+        <p class="d-flex justify-content-center align-items-center">
+          TT 2021-B050
+          "PROTOTIPO PARA IDENTIFICAR RASGOS DE PERSONALIDAD DE LA TRIADA OSCURA (MAQUIAVELISMO, NARCISISMO Y PSICOPATÍA) EN ENTREVISTAS DE TRABAJO."
+        </p>
+      </section>
+      <!-- Section: CTA -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <p>Instituto Politecnico Nacional</p> 
+      <p>Escuela Superior de Computo</p> 
+    </div>
+    <!-- Copyright -->
+  </footer>

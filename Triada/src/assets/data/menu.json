@@ -1,0 +1,10 @@
+[
+    {
+        "nombre": "Gestión de Usuarios",
+        "redirect": "/dashboard/usuarios"
+    },
+    {
+        "nombre": "Mi Perfil",
+        "redirect": "/dashboard/perfil"
+    }
+]

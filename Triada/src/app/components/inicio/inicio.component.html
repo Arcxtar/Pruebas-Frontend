@@ -1,0 +1,160 @@
+<mat-toolbar color="primary">
+  <span>Triada Oscura</span>
+  <span class="example-spacer"></span>
+  <!--  -->
+  <button (click)="cuestionario()" mat-button>
+    Cuestionario
+  </button>
+  <span class="example-spacer"></span>
+  <button (click)="signin()" mat-button>
+    Registro
+  </button>
+  <button (click)="login()"mat-button>
+    Ingresar
+</button>
+</mat-toolbar>
+
+<div id='Slider_TO' class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators"><!--Indicadores-->
+        <button type="button" data-bs-target="#Slider_TO" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Maquiavelismo"></button>
+        <button type="button" data-bs-target="#Slider_TO" data-bs-slide-to="1" aria-label="Narcisismo"></button>
+        <button type="button" data-bs-target="#Slider_TO" data-bs-slide-to="2" aria-label="Psicopatia"></button>
+      </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="../../../assets/img/Maquiavelismo.jpg" class="d-block w-100" alt="Maquiavelismo">
+          <div class="carousel-caption d-none d-md-block text-start">
+            <h1>Maquiavelismo</h1>
+            <p>Consiste en la manipulación y explotación de otras personas siendo interés propio el
+                elemento central.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="../../../assets/img/Narcisismo.jpg" class="d-block w-100" alt="Narcisismo">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Narcisismo</h1>
+            <p>Consiste en una grandiosidad o admiración desmesurada hacia uno mismo, ansiar la
+                admiración del resto, tener un sentimiento de superioridad ante los demás y que por ello se merezca un
+                trato especial.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="../../../assets/img/Psicopatia.jpg" class="d-block w-100 align-content: center" alt="Psicopatia">
+          <div class="carousel-caption d-none d-md-block text-end">
+            <h1>Psicopatía</h1>
+            <p>Se caracteriza por una baja empatía, impulsividad, conducta antisocial,
+                insensibilidad hacia los sentimientos de los demás y ausencia o poco remordimiento sobre las conductas
+                propias que dañan a otros, lo que implica una falta de sentido moral en las acciones propias.</p>
+          </div>
+        </div>
+
+    </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#Slider_TO" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#Slider_TO" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+</div>
+  
+<div class="container marketing">
+    <div class="featurette-heading" >
+        <h1 class="featurette-heading">Triada Oscura</h1>
+        <img class="img-fluid mx-auto" width="300" height="300" src="../../../assets/img/usuario1.png" alt="Psicopatia">
+        <p class="mt-3">Maquiavelismo, narcisismo y psicopatía son los tres rasgos de personalidad que componen la que se
+                conoce como la triada oscura de la personalidad. El concepto original es Dark Triad of Personality, y se referiere a las tres grandes dimensiones de
+                personalidad consideradas como dañinas o destructivas para las personas con las que interactúan los
+                individuos con alta puntuación en estas dimensiones, quienes pueden presentar autopromoción, frialdad
+                emocional, duplicidad, y agresividad y que en el ámbito laboral se traduce en una pobre relación laboral,
+                donde se prioriza el grupo y los demás, así como los objetivos de la organización por sobre el
+                individuo.</p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+        <div class="col-lg-4">
+          <img src="../../../assets/img/DT1.png" class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false">
+  
+          <h2 class="mt-3">Maquiavelismo</h2>
+          <p>El Maquiavelismo consiste en la manipulación y explotación de otras personas siendo interés propio el
+            elemento central. Esto a través de una tendencia a creencias cínicas, frías, pragmáticas e inmorales;
+            afecto desapegado, planificación estratégica y tácticas de manipulación.</p>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="../../../assets/img/DT2.png" class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <h2 class="mt-3">Narcisismo</h2>
+          <p>El narcisismo consiste en una grandiosidad o admiración desmesurada hacia uno mismo, ansiar la
+            admiración del resto, tener un sentimiento de superioridad ante los demás y que por ello se merezca un
+            trato especial. Al mismo tiempo son extremadamente sensibles a las críticas que cuestionen su supuesta
+            superioridad y pueden reaccionar de forma violenta. De igual forma, tienen una autoimagen positiva,
+            aunque poco realista.</p>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="../../../assets/img/DT3.png" class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <h2 class="mt-3">Psicopatía</h2>
+          <p>La psicopatía se caracteriza por una baja empatía, impulsividad, conducta antisocial,
+            insensibilidad hacia los sentimientos de los demás y ausencia o poco remordimiento sobre las conductas
+            propias que dañan a otros, lo que implica una falta de sentido moral en las acciones propias. En las
+            relaciones interpersonales, son locuaces y encantadores y establecen efectos superficiales.</p>
+        </div>
+    </div>
+  
+    <hr class="featurette-divider">
+  
+    <div class="row featurette">
+        <div class="col-md-7">
+          <h1 class="featurette-heading fw-normal lh-1">Ambiente Organizacional</h1>
+          <p>Toda organización tiene propiedades o características que poseen otras organizaciones, sin embargo,
+            cada una de ellas tiene una serie exclusiva de esas características y propiedades. El ambiente interno en
+            que se encuentra la organización lo forman las personas que la integran, y esto es considerado como el
+            clima o ambiente organizacional. Los sentimientos psicológicos presentes en este ambiente, como
+            pueden ser la confianza, el temor, el progreso o la inseguridad reflejan el funcionamiento interno de la
+            organización. Es por ello que el comportamiento de un individuo en la misma no es solo dependiente de
+            sus propias vivencias personales, sino también de la forma en la que este percibe este ambiente de trabajo
+            y aquellos que conforman a la organización. Se puede definir como el ambiente de trabajo
+            percibido por los miembros de la organización y que incluye estructura, estilo de liderazgo,
+            comunicación, motivación y recompensas, ejerciendo influencia directa en el comportamiento y
+            desempeño de los individuos.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="../../../assets/img/ambiente.jpg" width="500">
+        </div>
+    </div>
+  
+    <hr class="featurette-divider">
+  
+</div>
+
+<footer class="text-center text-white" style="background-color: #0a4275;">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: CTA -->
+    <section class="text-center">
+      <p class="d-flex justify-content-center align-items-center">
+        TT 2021-B050
+      </p>
+      <p class="d-flex justify-content-center align-items-center">
+        TT 2021-B050
+        "PROTOTIPO PARA IDENTIFICAR RASGOS DE PERSONALIDAD DE LA TRIADA OSCURA (MAQUIAVELISMO, NARCISISMO Y PSICOPATÍA) EN ENTREVISTAS DE TRABAJO."
+      </p>
+    </section>
+    <!-- Section: CTA -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <p>Instituto Politecnico Nacional</p> 
+    <p>Escuela Superior de Computo</p> 
+  </div>
+  <!-- Copyright -->
+</footer>

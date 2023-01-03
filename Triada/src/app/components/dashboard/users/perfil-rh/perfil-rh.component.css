@@ -1,0 +1,58 @@
+.demo-table {
+    width: 100%;
+  }
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+table {
+    width: 100%;
+}
+
+.ancho{
+    width: 80%;
+}
+
+.text-danger{
+    text-align: start;
+    margin-left: 8px;
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+.row {
+    display: flexbox
+}
+
+.column {
+    flex: 30%;
+    margin: 0px 5px;
+}
+
+.columna {
+    flex: 50%;
+    margin: 0px 5px;
+}
+
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.wrapperperfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-perfil{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}

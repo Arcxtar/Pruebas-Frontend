@@ -1,0 +1,362 @@
+[
+    {
+        "numero": "1",
+        "pregunta": "Me gusta tener cautela en lo que hago y cómo lo hago"
+    },
+    {
+        "numero": "2",
+        "pregunta": "Siempre hago todo a mi modo"
+    },
+    {
+        "numero": "3",
+        "pregunta": "Es difícil que los demás me hagan pensar diferente a mi idea principal"
+    },
+    {
+        "numero": "4",
+        "pregunta": "Aun si los demás puedan considerar mala una acción o forma de pensar, yo no siento culpa alguna"
+    },
+    {
+        "numero": "5",
+        "pregunta": "Me siento satisfecho cuando hago las cosas cuando, cómo y donde yo quiero"
+    },
+    {
+        "numero": "6",
+        "pregunta": "Pienso muy metódicamente los problemas"
+    },
+    {
+        "numero": "7",
+        "pregunta": "He hecho cosas malas"
+    },
+    {
+        "numero": "8",
+        "pregunta": "Me siento indiferente a los demás casi todo el tiempo"
+    },
+    {
+        "numero": "9",
+        "pregunta": "Hago las cosas por impulso"
+    },
+    {
+        "numero": "10",
+        "pregunta": "Estoy dispuesto a dar o hacer cosas que no me agraden por los demás, si así logro caerle bien a la gente adecuada"
+    },
+    {
+        "numero": "11",
+        "pregunta": "Nunca me detengo a pensar en las repercusiones de mis acciones en los demás"
+    },
+    {
+        "numero": "12",
+        "pregunta": "Me cuesta aceptar que no todos comparten mi opinión"
+    },
+    {
+        "numero": "13",
+        "pregunta": "Tengo pensamientos diferentes a los demás"
+    },
+    {
+        "numero": "14",
+        "pregunta": "No es importante para mi conocer la opinión de los demás respecto a mi vida o mis acciones"
+    },
+    {
+        "numero": "15",
+        "pregunta": "Siento que mis habilidades te pueden llevar a donde quiera"
+    },
+    {
+        "numero": "16",
+        "pregunta": "A veces puedo parecer muy frío o muy alegre"
+    },
+    {
+        "numero": "17",
+        "pregunta": "Me da igual cuando los demás me hablan de sus cosas"
+    },
+    {
+        "numero": "18",
+        "pregunta": "Siento que puedo conseguir todo de los demás"
+    },
+    {
+        "numero": "19",
+        "pregunta": "Soy organizado"
+    },
+    {
+        "numero": "20",
+        "pregunta": "Soy fiel a mi mismo"
+    },
+    {
+        "numero": "21",
+        "pregunta": "No me detengo mucho a pensar en las consecuencias para los demás cuando me hacen un favor"
+    },
+    {
+        "numero": "22",
+        "pregunta": "Soy analítico"
+    },
+    {
+        "numero": "23",
+        "pregunta": "Siempre sigo mis deseos"
+    },
+    {
+        "numero": "24",
+        "pregunta": "Es fácil hacer que los demás hagan las cosas a mi modo"
+    },
+    {
+        "numero": "25",
+        "pregunta": "Soy apasionado"
+    },
+    {
+        "numero": "26",
+        "pregunta": "Casi nunca cometo errores"
+    },
+    {
+        "numero": "27",
+        "pregunta": "No importa el costo para alcanzar lo que quiero con tal de conseguirlo"
+    },
+    {
+        "numero": "28",
+        "pregunta": "Si veo a alguien sufriendo, me da igual"
+    },
+    {
+        "numero": "29",
+        "pregunta": "No tolero que me digan que hice algo mal"
+    },
+    {
+        "numero": "30",
+        "pregunta": "Quiero seguir mis metas y deseos a toda costa"
+    },
+    {
+        "numero": "31",
+        "pregunta": "No está mal romper la ley o hacer algo malo, mientras no se sepa"
+    },
+    {
+        "numero": "32",
+        "pregunta": "Me desespero cuando me critican"
+    },
+    {
+        "numero": "33",
+        "pregunta": "Me es indiferente la opinión de los demás"
+    },
+    {
+        "numero": "34",
+        "pregunta": "Puedo tener algún interés importante y muy marcado en mi"
+    },
+    {
+        "numero": "35",
+        "pregunta": "No me interesa saber que piensan los demás"
+    },
+    {
+        "numero": "36",
+        "pregunta": "No me preocupa que los demás se sientan mal mientras hagan lo que yo deseo"
+    },
+    {
+        "numero": "37",
+        "pregunta": "Me gusta llevar algún tipo de seguimiento en lo que hago"
+    },
+    {
+        "numero": "38",
+        "pregunta": "Aun si no me lo preguntan creo que mi opinión es importante de compartir"
+    },
+    {
+        "numero": "39",
+        "pregunta": "Es muy cómodo que los demás sigan mis instrucciones"
+    },
+    {
+        "numero": "40",
+        "pregunta": "Soy planificador"
+    },
+    {
+        "numero": "41",
+        "pregunta": "Me gusta contar cosas de mi"
+    },
+    {
+        "numero": "42",
+        "pregunta": "No hay problema si para alcanzar el éxito usas a alguien"
+    },
+    {
+        "numero": "43",
+        "pregunta": "Aun si los demás lloran por una tragedia, yo puedo sentirme complacido internamente"
+    },
+    {
+        "numero": "44",
+        "pregunta": "Me molesta que no presten atención a lo que digo"
+    },
+    {
+        "numero": "45",
+        "pregunta": "Si buscas la debilidad de alguien, es más fácil saber que decirle para caerle bien"
+    },
+    {
+        "numero": "46",
+        "pregunta": "A ocurrido el sentir necesidad de lastimar a los demás"
+    },
+    {
+        "numero": "47",
+        "pregunta": "Me gusta siempre dar mi punto de vista"
+    },
+    {
+        "numero": "48",
+        "pregunta": "Consigo convencer a los demás que mi perspectiva es la correcta"
+    },
+    {
+        "numero": "49",
+        "pregunta": "Me siento muy bien controlando las cosas a mi beneficio"
+    },
+    {
+        "numero": "50",
+        "pregunta": "Soy importante"
+    },
+    {
+        "numero": "51",
+        "pregunta": "Me gusta que se sigan mis deseos al pie de la letra"
+    },
+    {
+        "numero": "52",
+        "pregunta": "No siento remordimientos"
+    },
+    {
+        "numero": "53",
+        "pregunta": "Me gusta escuchar a las demás personas hablar de mi"
+    },
+    {
+        "numero": "54",
+        "pregunta": "Cuando las demás personas hacen lo que yo quiero, me causa placer o satisfacción"
+    },
+    {
+        "numero": "55",
+        "pregunta": "No importa lastimar animales"
+    },
+    {
+        "numero": "56",
+        "pregunta": "Las platicas son más interesantes cuando hablan de mi"
+    },
+    {
+        "numero": "57",
+        "pregunta": "Cualquiera buscaría obtener beneficios de alguien débil si se presenta la oportunidad"
+    },
+    {
+        "numero": "58",
+        "pregunta": "A veces ver el sufrimiento de otros me causa placer"
+    },
+    {
+        "numero": "59",
+        "pregunta": "Mi físico me importa mucho"
+    },
+    {
+        "numero": "60",
+        "pregunta": "Creo que es fácil influir en las decisiones y pensamientos de las demás personas"
+    },
+    {
+        "numero": "61",
+        "pregunta": "Me tengo en muy alta estima a comparación de los demás"
+    },
+    {
+        "numero": "62",
+        "pregunta": "Prefiero ser feliz y humilde a buscar el reconocimiento de todos"
+    },
+    {
+        "numero": "63",
+        "pregunta": "Es mala idea ocultarle los planes a alguien que nos ayuda"
+    },
+    {
+        "numero": "64",
+        "pregunta": "He tenido pensamientos vengativos"
+    },
+    {
+        "numero": "65",
+        "pregunta": "Puedo aprender mucho más de los demás que por mi cuenta"
+    },
+    {
+        "numero": "66",
+        "pregunta": "Si no se obliga a alguien, no trabajaría más duro"
+    },
+    {
+        "numero": "67",
+        "pregunta": "La gente más sensible suele ser más débil"
+    },
+    {
+        "numero": "68",
+        "pregunta": "Me gusta que me volteen a ver cuando salgo"
+    },
+    {
+        "numero": "69",
+        "pregunta": "Es mejor asumir que todos pueden ser malos"
+    },
+    {
+        "numero": "70",
+        "pregunta": "Llegué a ejercer bullying en la escuela"
+    },
+    {
+        "numero": "71",
+        "pregunta": "Me considero mejor que el promedio"
+    },
+    {
+        "numero": "72",
+        "pregunta": "La mejor estrategia es ser honesto"
+    },
+    {
+        "numero": "73",
+        "pregunta": "Mentir es tan natural como hablar"
+    },
+    {
+        "numero": "74",
+        "pregunta": "Tengo el cuerpo que deseo"
+    },
+    {
+        "numero": "75",
+        "pregunta": "Es posible ser bueno en todos los aspectos"
+    },
+    {
+        "numero": "76",
+        "pregunta": "Soy alguien promiscuo"
+    },
+    {
+        "numero": "77",
+        "pregunta": "Todos a mi alrededor me dicen lo bueno que soy"
+    },
+    {
+        "numero": "78",
+        "pregunta": "Es fácil olvidar a la gente importante"
+    },
+    {
+        "numero": "79",
+        "pregunta": "No me gusta aceptar las consecuencias de mis actos"
+    },
+    {
+        "numero": "80",
+        "pregunta": "Es difícil comprender que piensan los demás"
+    },
+    {
+        "numero": "81",
+        "pregunta": "No se llega a ningún lado sin atajos"
+    },
+    {
+        "numero": "82",
+        "pregunta": "La gente me dice que soy algo frío"
+    },
+    {
+        "numero": "83",
+        "pregunta": "Siempre me resulta todo como lo planeo"
+    },
+    {
+        "numero": "84",
+        "pregunta": "La valentía es deseable en el ser humano"
+    },
+    {
+        "numero": "85",
+        "pregunta": "Actuar por impulso es característico de mí"
+    },
+    {
+        "numero": "86",
+        "pregunta": "Siento que los cumplidos están de más"
+    },
+    {
+        "numero": "87",
+        "pregunta": "Es mejor ser pobre y honrado que rico y deshonesto"
+    },
+    {
+        "numero": "88",
+        "pregunta": "Las emociones profundas casi no se dan en mí"
+    },
+    {
+        "numero": "89",
+        "pregunta": "Depender de los demás no es malo"
+    },
+    {
+        "numero": "90",
+        "pregunta": "La mayor parte de la gente exitosa es buena y ética"
+    }
+]

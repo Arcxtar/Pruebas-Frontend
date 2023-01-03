@@ -1,0 +1,72 @@
+<div class="wrapperperfil">
+    <form [formGroup]="rhForm">
+        <div class="row w-100 p-3 body-perfil">
+            <h1>Información del Usuario</h1>
+        </div>
+        <div class="row mb-2 body-perfil">
+            <div class="col-md-2 p-3">
+              <img src="../../../../../assets/img/{{img}}" class="img-fluid p-3"
+                alt="Imagen de Perfil">
+            </div>
+        </div>
+        <div class="row w-100 p-3">
+            <div class="column">
+                <mat-form-field appearance="fill">
+                    <mat-label>Nombre</mat-label>
+                    <input formControlName="Nombre" matInput autocomplete="off" [readonly]="true">
+                </mat-form-field>
+            </div>
+    
+            <div class="column">
+                <mat-form-field appearance="fill">
+                    <mat-label>Apellido Paterno</mat-label>
+                    <input formControlName="A_Paterno" matInput autocomplete="off" [readonly]="true">
+                </mat-form-field>
+            </div>
+    
+            <div class="column">
+                <mat-form-field appearance="fill">
+                    <mat-label>Apellido Materno</mat-label>
+                    <input formControlName="A_Materno" matInput autocomplete="off" [readonly]="true">
+                </mat-form-field> 
+            </div>
+    
+            <div class="column">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Edad</mat-label>
+                        <input  formControlName="Fecha_nac" matInput  autocomplete="off" [readonly]="true">
+                        <mat-datepicker touchUi #picker></mat-datepicker>
+                </mat-form-field>
+            </div> 
+    
+            <div class="column">
+                <mat-form-field appearance="fill">
+                    <mat-label>Género</mat-label>
+                    <input formControlName="Genero" matInput autocomplete="off" [readonly]="true">
+                </mat-form-field> 
+            </div> 
+    
+            <div class="column">
+                <mat-form-field appearance="fill">
+                    <mat-label>Correo</mat-label>
+                    <input formControlName="Correo" matInput autocomplete="off" [readonly]="true">
+                  </mat-form-field> 
+            </div>
+    
+            <div class="column">
+                <mat-form-field appearance="fill">
+                    <mat-label>Empresa</mat-label>
+                    <input formControlName="Empresa" matInput autocomplete="off" [readonly]="true">
+                </mat-form-field> 
+            </div>
+
+            <div class="column">
+                <mat-form-field appearance="fill">
+                    <mat-label>Código Personal</mat-label>
+                    <input matInput autocomplete="off" [readonly]="true" placeholder="{{Code}}" value="{{Code}}"> 
+                </mat-form-field> 
+            </div>
+        </div>
+    </form>
+</div>
+

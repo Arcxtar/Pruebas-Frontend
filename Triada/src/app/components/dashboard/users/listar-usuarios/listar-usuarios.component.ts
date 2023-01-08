@@ -46,6 +46,7 @@ export class ListarUsuariosComponent implements OnInit, AfterViewInit {
 
   obtenerCandidatos() {
     this.loading = true;
+    console.log("Im in")
     setTimeout(() => {
       this.Persona.getPersona(Number(localStorage.getItem("ID"))).subscribe((res:Candidato[])=>{
         this.loading = false;

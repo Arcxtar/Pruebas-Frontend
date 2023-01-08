@@ -2,6 +2,7 @@ import { Component, OnInit ,Inject} from '@angular/core';
 import { MatDialogRef , MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { CandidateService } from 'src/app/services/candidate.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dialog-eliminar',
@@ -15,6 +16,7 @@ export class DialogEliminarComponent implements OnInit {
   constructor(
     public dialogRef: MatDialogRef<DialogEliminarComponent>,
     private _snackBar: MatSnackBar,
+    private router:Router,
     private Persona:CandidateService,
     @Inject(MAT_DIALOG_DATA) public data: {ID:Number,Nombre:String,Correo:String},
     ) { 
@@ -41,7 +43,10 @@ export class DialogEliminarComponent implements OnInit {
     this._snackBar.open('El candidato ha sido eliminado con éxito', '', {
       duration: 2000
     });
-    window.location.reload()
+    //window.location.reload()
+    this.dialogRef.close();
+    this.router.navigate(['/dashboard/bienvenida'])
+    
   }
 
 }

@@ -156,7 +156,8 @@ export class CuestionarioComponent implements OnInit, AfterViewInit {
     this.Cuestionario.postTransaccion(T).subscribe((res:any)=>{
       console.log(res)
     })
-    window.location.reload()
+    //window.location.reload()
+    this.router.navigate(['/inicio'])
   }
 
 }
